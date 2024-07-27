@@ -1,0 +1,48 @@
+body * {
+	border: solid 5px;
+}
+
+nav{
+	border-color: red;
+}
+
+main{
+	border-color: blue;
+}
+
+div{
+	border-color: purple;
+}
+
+header{
+	border-color: yellow;
+}
+
+section{
+	border-color: violet;
+}
+
+button{
+	border-color: green;
+}
+
+.selected{
+	background-color: #aaa;
+}
+
+.popup-error{
+	color: red;
+}
+
+.frame-status-0{
+	background-color: skyblue;
+}
+
+.frame-status-1{
+	background-color: orange;
+}
+
+.frame-status-2{
+	background-color: yellowgreen;
+}
+

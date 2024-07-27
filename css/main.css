@@ -1,0 +1,280 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	padding: 0.25em 0.5em;
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: row;
+}
+
+header > span{
+	flex-grow: 1;
+}
+
+header > button{
+	padding: 0 .5em;
+}
+
+button{
+	border: none;
+	border-radius: 1em;
+	margin: 0;
+	padding: 0.25em 1.5em;
+	background-color: inherit;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+textarea{
+	width: 100%;
+	height: 20%;
+}
+
+@media screen and (min-width: 800px) {
+	nav{
+		min-width: 200px;
+		width: 14vw;
+		height: 100vh;
+		float: left;
+	}
+
+	main{
+		width: calc(100% - max(14vw, 200px));
+		height: 100vh;
+		float: left;
+	}
+}
+
+@media screen and not (min-width: 800px) {
+	body{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav{
+		width: 100vw;
+		max-height: 40vh;
+	}
+	
+	nav > header > span:hover{
+		font-weight: bold;
+	}
+
+	nav > header > button, #nav{
+		display: none;
+	}
+
+	.nav-toggled, #nav.nav-toggled{
+		display: block;
+	}
+
+	main{
+		width: 100vw;
+		flex-grow: 1;
+	}
+}
+
+nav{
+	overflow: auto;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 800px){
+	main > .cnt{
+		flex-direction: row;
+	}
+} 
+
+@media screen and not (min-width: 800px){
+	main > .cnt{
+		flex-direction: column;
+	}
+}
+
+main > .cnt{
+	padding: 1em;
+	flex-grow: 1;
+	overflow: auto;
+	display: flex;
+}
+
+#nav{
+	width: 100%;
+	overflow-y: auto;
+}
+
+#nav > div{
+	cursor: pointer;
+	padding: 0.25em 0.5em;
+	font-size: 1.25em;
+}
+
+.popup{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (min-width: 800px){
+	.popup-body{
+		width: 50%;
+		left: 25%;
+	}
+} 
+
+@media screen and not (min-width: 800px){
+	.popup-body{
+		width: 80%;
+		left: 10%;
+	}
+}
+
+.popup-body{
+	height: auto;
+	padding: 2em;
+	position: relative;
+	top: 10%;
+	border-radius: 2em;
+}
+
+.popup-body > header{
+	border-radius: 1em;
+	padding: 0.25em 0.5em;
+	font-size: 1.25em;
+}
+
+.popup-cnt{
+	padding: 1em;
+	width: 100%;
+	max-height: 50vh;
+	overflow: auto;
+}
+
+.popup-footer{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+@media screen and (min-width: 800px){
+	.frame{
+		min-width: 40%;
+		width: 40%;
+		height: 100%;
+		margin-right: 1em;
+	}
+} 
+
+@media screen and not (min-width: 800px){
+	.frame{
+		min-height: 90%;
+		widht: 100%;
+		height: 90%;
+		margin-bottom: 1em;
+	}
+}
+
+.frame{
+	border-radius: 2em;
+	padding: 0.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.frame > header{
+	border-radius: 1em;
+}
+
+.frame > footer{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.frame-cnt{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.frame-description{
+	max-height: 30%;
+	overflow: auto;
+	padding: 1em;
+}
+
+.frame-list{
+	margin-top: 0.5em;
+}
+
+.frame-description-grow,
+.frame-list{
+	flex-grow: 1;
+	overflow: auto;
+}
+
+.frame-list > div{
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+	padding: 0.25em 0.5em;
+}
+
+.frame-list > div > span{
+	flex-grow: 1;
+}
+
+.frame-status,
+.frame-status-0,
+.frame-status-1,
+.frame-status-2
+{
+	--frame-item-status-size: 1.4em;
+	border: solid lightgray 1px;
+	border-radius: 1em;
+	width: var(--frame-item-status-size);
+	height: var(--frame-item-status-size);
+	margin: auto;
+}
+
+.frame-menu{
+	height: 2em;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+	transition-property: width;
+	transition-duration: 1s;
+}
+
+.frame-menu * {
+	text-align: center;
+	cursor: pointer;
+}
+
+.frame-menu > span{
+	width: 2em;
+}
+
+.frame-menu-bar{
+	flex-grow: 1;
+	grid-template-columns: auto auto auto;
+	justify-content: stretch;
+}
+

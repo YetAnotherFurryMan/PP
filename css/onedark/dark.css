@@ -1,0 +1,28 @@
+:root{
+	--variant-black: #181a1f;
+	--variant-bg0: #282c34;
+	--variant-bg1: #31353f;
+	--variant-bg2: #393f4a;
+	--variant-bg3: #3b3f4c;
+	--variant-bg-d: #21252b;
+	--variant-bg-blue: #73b8f1;
+	--variant-bg-yellow: #ebd09c;
+	--variant-fg: #abb2bf;
+	--variant-purple: #c678dd;
+	--variant-green: #98c379;
+	--variant-orange: #d19a66;
+	--variant-blue: #61afef;
+	--variant-yellow: #e5c07b;
+	--variant-cyan: #56b6c2;
+	--variant-red: #e86671;
+	--variant-grey: #5c6370;
+	--variant-light-grey: #848b98;
+	--variant-dark-cyan: #2b6f77;
+	--variant-dark-red: #993939;
+	--variant-dark-yellow: #93691d;
+	--variant-dark-purple: #8a3fa0;
+	--variant-diff-add: #31392b;
+	--variant-diff-delete: #382b2c;
+	--variant-diff-change: #1c3448;
+	--variant-diff-text: #2c5372;
+}

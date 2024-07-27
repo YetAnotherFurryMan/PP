@@ -1,0 +1,86 @@
+:root{
+	--rosewater: var(--variant-rosewater, #dc8a78);
+	--flamingo: var(--variant-flamingo, #dd7878);
+	--pink: var(--variant-pink, #ea76cb);
+	--mauve: var(--variant-mauve, #8839ef);
+	--red: var(--variant-red, #d20f39);
+	--maroon: var(--variant-maroon, #e64553);
+	--peach: var(--variant-peach, #fe640b);
+	--yellow: var(--variant-yellow, #df8e1d);
+	--green: var(--variant-green, #40a02b);
+	--teal: var(--variant-teal, #179299);
+	--sky: var(--variant-sky, #04a5e5);
+	--sapphire: var(--variant-sapphire, #209fb5);
+	--blue: var(--variant-blue, #1e66f5);
+	--lavender: var(--variant-lavender, #7287fd);
+	--text: var(--variant-text, #4c4f69);
+	--subtext1: var(--variant-subtext1, #5c5f77);
+	--subtext0: var(--variant-subtext0, #6c6f85);
+	--overlay2: var(--variant-overlay2, #7c7f93);
+	--overlay1: var(--variant-overlay1, #8c8fa1);
+	--overlay0: var(--variant-overlay0, #9ca0b0);
+	--surface2: var(--variant-surface2, #acb0be);
+	--surface1: var(--variant-surface1, #bcc0cc);
+	--surface0: var(--variant-surface0, #ccd0da);
+	--base: var(--variant-base, #eff1f5);
+	--mantle: var(--variant-mantle, #e6e9ef);
+	--crust: var(--variant-crust, #dce0e8);
+}
+
+body{
+	background-color: var(--base);
+	color: var(--text);
+}
+
+header{
+	background-color: var(--mantle);
+}
+
+button{
+	background-color: var(--surface0);
+	color: var(--text);
+}
+
+button:hover{
+	background-color: var(--surface1);
+}
+
+nav{
+	background-color: var(--crust);
+}
+
+.selected{
+	background-color: var(--surface2);
+}
+
+.popup-body{
+	background-color: var(--overlay0);
+}
+
+.popup-cnt{
+	background-color: var(--overlay0);
+}
+
+.popup-error{
+	color: var(--red);
+}
+
+.frame{
+	background-color: var(--surface0);
+}
+
+.frame-status-0{
+	background-color: var(--blue);
+}
+
+.frame-status-1{
+	background-color: var(--yellow);
+}
+
+.frame-status-2{
+	background-color: var(--green);
+}
+
+.frame-menu{
+	background-color: var(--base);
+}
