@@ -1,3 +1,5 @@
+# This project was moved to T!M and works under Mountain Framework
+
 # (Simple) Project Planner
 Is a simple web-app made for planing projects.
 
